@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Imagly</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-cordova/0.1.27-alpha/ng-cordova.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVzPLgOF2FDxq4LPB_GIMoyQCsaAVvVjI",
+    authDomain: "gallery-f34a1.firebaseapp.com",
+    databaseURL: "https://gallery-f34a1.firebaseio.com",
+    projectId: "gallery-f34a1",
+    storageBucket: "gallery-f34a1.appspot.com",
+    messagingSenderId: "911922022302"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="">
+    <h1>Imagly</h1>
+    <div id="visits">
+    </div>
+  </header>
+  <hr>
+  <main>
+  <div class="forms">
+    <form>
+      <label for="imgurl">Image URL</label>
+      <input type="text" id="imgurl" required>
+      <label for="caption">Caption</label>
+      <textarea name="" id="caption" cols="30" rows="5"required></textarea>
+      <input type="submit">
+    </form>
+  </div>
+  <div class="news">
+    <h2>News</h2>
+    
+
+  </div>
+  <div class="gallery">
+
+  </div>
+  </main>
+  <div class="full">
+
+  </div>
+</body>
+</html>
